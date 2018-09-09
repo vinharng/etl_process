@@ -1,14 +1,14 @@
 # Architecture
 The programs are structured into 3 types of scripts:
--*params.py* holds information such as file paths,url links and html tags
--source scripts
-	-*scrape_functions.py* stores functions that gets called and executed. 
-		-There is a function to retrieve url from each auction event(the events in this case are March2018 and November2017).
-		-There is another function to retrieve the information for each lot in every auction event. 
-	-*queries.py* stores functions that answer the specific queries
--executing scripts
-	-*extract_and_write_to_file.py* calls scraping functions and write dataset to file. It first turns all the data into a pandas dataframe, and then write to a csv file.   
-	-*load_and_compute.py* loads the data into a pandas dataframe, and calls the required functions to answer the questions
+- *params.py* holds information such as file paths,url links and html tags
+- source scripts
+	- *scrape_functions.py* stores functions that gets called and executed. 
+		- There is a function to retrieve url from each auction event(the events in this case are March2018 and November2017).
+		- There is another function to retrieve the information for each lot in every auction event. 
+	- *queries.py* stores functions that answer the specific queries
+- executing scripts
+	- *extract_and_write_to_file.py* calls scraping functions and write dataset to file. It first turns all the data into a pandas dataframe, and then write to a csv file.   
+	- *load_and_compute.py* loads the data into a pandas dataframe, and calls the required functions to answer the questions
 
 # Data Warehousing
 ## Implemented
